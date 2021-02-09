@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+</head>
+<body>
+    <form>
+            <fieldset>
+                <p>
+                    <label>Equation1</label>
+                    <input type = "text"
+                 id = "myText"
+                 value = "" />
+                </p>
+            </fieldset>
+        </form>
+    <table>
+        
+        <th>
+            <td><button>AC</button></td> 
+            <td><button>(+/-)</button></td> 
+            <td><button>SQRT</button></td>
+            <td><button>Div</button></td>
+        </th>
+        <tr>
+            <td></td>
+           <td><button onclick="myFunction7()">7</button></td> 
+           <td><button onclick="myFunction8()">8</button></td> 
+           <td><button onclick="myFunction()">9</button></td> 
+           <td><button onclick="myFunction()">Mult</button></td> 
+        </tr>
+        <tr>    <td></td>
+                <td><button onclick="myFunction()">4</button></td>
+                <td><button onclick="myFunction()">5</button></td>
+                <td><button onclick="myFunction()">6</button></td>
+                <td><button onclick="myFunction()">Min</button></td> 
+        </tr>
+        <tr>
+                <td></td>
+                <td><button onclick="myFunction()">1</button></td>
+                <td><button onclick="myFunction()">2</button></td>
+                <td><button onclick="myFunction()">3</button></td>
+                <td><button onclick="myFunctionADD()">add</button></td>
+        </tr>
+        <tr>
+                <td></td>
+                <td><button onclick="myFunction()">0</button></td>
+                <td><button onclick="myFunction()">.</button></td>
+                <td><button onclick="myFunctionEqual()">equal</button></td>
+                <td><button onclick="myFunction()">blank</button></td>
+        </tr>
+    </table>
+<script>
+    var result;
+function myFunction7(){
+   prompt(7,7);
+   result = result + "7";
+}
+function myFunction8(){
+   prompt(8,8);
+   result = result + "8";
+}
+function myFunctionADD(){
+    prompt('additon','+');
+    result = result + '+';
+}
+function myFunctionEqual(){
+    prompt('equal','equal');
+    console.log(result);
+    
+}
+
+</script>
+
+</body>
+</html>

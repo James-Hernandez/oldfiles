@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Lab 4</title>
+</head>
+<body>
+    <h1>javascript page</h1>
+        <div>
+            <button onclick="myFunction()">continue</button>
+            <p id="demo"></p>
+            <button onclick="goType()">types</button>
+        </div>
+    <script>
+    alert("it is my first exammple of javaScript");
+    function myFunction(){
+        var user = prompt("type in which shape you want", "choices are square or circle");
+        if (user != null) {
+        document.getElementById("demo").innerHTML = "you chose " + user;
+        }
+        if(user == 'square'){
+            var sideX = prompt("Enter side length");
+            var areaS = sideX * 2;
+            var permS = sideX * 4;
+            alert("the area is " + areaS + " the perimiter is " + permS );
+        }
+    }
+    function goType(){
+        console.log(("" + 1 + 0) + " " + typeof("" + 1 + 0));
+        console.log(typeof("" - 1 + 0));
+        console.log(typeof(true + false));
+        console.log(typeof(6 / "3"));
+        console.log(typeof("2" * "3"));
+        console.log(typeof(" -9\n" + 5));
+        console.log(typeof(" -9\n" - 5));
+    }
+    function ex2(){
+        let msg = ' ';
+        login = prompt('enter login', 'login');
+        login == 'student' ? msg = 'hi'
+       : login == 'faculty' ? msg = 'greetings'
+       : login == '' ? msg = 'no login'
+       : msg = '';
+    }
+    
+    </script>
+</body>
+</html>

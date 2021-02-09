@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Coin Crash" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Coin Crash" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="C:/Users/rhode/Desktop/Coin Crash/common/bin" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Coin Crash" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="C:/Users/rhode/Desktop/Coin Crash/common/bin" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="../common/include" />
+			<Add directory="include" />
+		</Compiler>
+		<Linker>
+			<Add library="../common/lib/libirrKlang.a" />
+			<Add library="common/lib/glew32s.lib" />
+			<Add library="common/lib/libSOIL.a" />
+			<Add library="glut32" />
+			<Add library="opengl32" />
+			<Add library="glu32" />
+			<Add library="winmm" />
+			<Add library="gdi32" />
+			<Add library="common/lib/glut32.lib" />
+			<Add directory="../common/lib" />
+		</Linker>
+		<Unit filename="common/include/GL/glut.h" />
+		<Unit filename="common/include/SOIL.h" />
+		<Unit filename="include/Coin.h" />
+		<Unit filename="include/CollisionChecker.h" />
+		<Unit filename="include/CreditScene.h" />
+		<Unit filename="include/GLLight.h" />
+		<Unit filename="include/GLScene.h" />
+		<Unit filename="include/InfoScene.h" />
+		<Unit filename="include/Inputs.h" />
+		<Unit filename="include/LevelDisplay.h" />
+		<Unit filename="include/LevelOne.h" />
+		<Unit filename="include/LevelTwo.h" />
+		<Unit filename="include/Litecoin.h" />
+		<Unit filename="include/Model.h" />
+		<Unit filename="include/MusicSelectScene.h" />
+		<Unit filename="include/Objects.h" />
+		<Unit filename="include/Parallax.h" />
+		<Unit filename="include/Particles.h" />
+		<Unit filename="include/PauseScene.h" />
+		<Unit filename="include/Player.h" />
+		<Unit filename="include/SceneLoader.h" />
+		<Unit filename="include/Sounds.h" />
+		<Unit filename="include/Spikes.h" />
+		<Unit filename="include/StartScene.h" />
+		<Unit filename="include/TextureLoader.h" />
+		<Unit filename="include/Timer.h" />
+		<Unit filename="include/loadShader.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Coin.cpp" />
+		<Unit filename="src/CollisionChecker.cpp" />
+		<Unit filename="src/CreditScene.cpp" />
+		<Unit filename="src/GLLight.cpp" />
+		<Unit filename="src/GLScene.cpp" />
+		<Unit filename="src/InfoScene.cpp" />
+		<Unit filename="src/Inputs.cpp" />
+		<Unit filename="src/LevelDisplay.cpp" />
+		<Unit filename="src/LevelOne.cpp" />
+		<Unit filename="src/LevelTwo.cpp" />
+		<Unit filename="src/Litecoin.cpp" />
+		<Unit filename="src/Model.cpp" />
+		<Unit filename="src/MusicSelectScene.cpp" />
+		<Unit filename="src/Objects.cpp" />
+		<Unit filename="src/Parallax.cpp" />
+		<Unit filename="src/Particles.cpp" />
+		<Unit filename="src/PauseScene.cpp" />
+		<Unit filename="src/Player.cpp" />
+		<Unit filename="src/SceneLoader.cpp" />
+		<Unit filename="src/Sounds.cpp" />
+		<Unit filename="src/Spikes.cpp" />
+		<Unit filename="src/StartScene.cpp" />
+		<Unit filename="src/TextureLoader.cpp" />
+		<Unit filename="src/Timer.cpp" />
+		<Unit filename="src/loadShader.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

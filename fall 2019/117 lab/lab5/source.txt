@@ -1,0 +1,79 @@
+
+/*
+IMPORTANT-- DEPENDING ON WHAT YOU TRY AND RUN THIS CODE WITH, AN ERROR ABOUT THE ENVIRONMENT SETTINGS MIGHT BE TRIGGERED
+THIS HAPPENED ON MY SYSTEM BUT AFTER AGREEING TO VISUAL STUDIOS STATEMENTS IT OUTPUTED THE RESULTS TO THE OUT.TXT FILE.
+*/
+
+#include <stdlib.h>
+#include <cstdlib>
+#include <string>
+#include <iostream>
+#include <unordered_map>
+#include <fstream>
+#include <vector>
+
+using namespace std;
+
+unordered_map<string, vector<string>>mylist;
+
+ifstream file;//file input object
+ofstream outputFile;//file output object
+string word1, word2;// two strings for each type of input.
+string id;//from old file
+int indexV = 0;//for thinking if the vector was going to need a certain index
+int main(int argc, const char **argv) {
+	string  fileName;
+	fileName = "data.txt";
+	file.open(fileName);
+	while(true) { //!file.eof()
+		getline(file, word1);//get the first line of the program ex 12312412421
+		getline(file, word2);//getting the second line of the program ex: ALDJFLASDDHFUHIHFVUSU...
+		//file >> word1;..... was thinking about using words but online stuff was working with getlines more so i changed it up
+		//cout << word1 << endl;//THIS WAS JUST TO SEE IF THE FILE WAS BEING READ CORRECTLY
+		//cout << word2 << endl;
+
+		if (file.eof()) {//very important to leave file if the the file hits end and have to check to make sure before continuring
+			break;
+		}
+		/*this if statements will compare and see if the lables provided have similar sequences in the data input file
+		and if they do then to add the label of numbers with the appropriate sequence */
+		if (mylist.find(word2) == mylist.end()) {//this will check to see if the first number string is in the list
+												  //FROM THE BEGINNING OF THE LIST TO THE END;
+			mylist[word2].push_back(word1);//if the string wasnt in the list then we will put it into the list
+			//now i just have to store the sequence
+		}
+		else {
+			mylist[word2].push_back(word1);//this will always store the string of letters into the vector.
+		}
+		
+
+	}
+
+	
+
+	file.close();//close the file when we are done so that there are no memory leaks i think
+	
+	outputFile.open("out.txt");//we open the output file
+	for (auto y : mylist) {//Automated for loop that will traverse the list mylist and here we will begin to output the statements
+		for (int i = 0; i < y.second.size(); i++) {
+		//so this second for loop is to scan the list and output the contents label numbers from the vectors
+		if (y.second.size() > 1) {// the if statement is check and see if there is more than one label number in the vector 
+								//so we compare the size and see if its greater than 1 (meaning more than 1 label) 
+									//and if so print out to the file with commas inbetween them as wwell
+			outputFile << y.second.at(i) << ", ";
+		}
+		else {
+			outputFile << y.second.at(i) << " ";//if the vector contents is just one label than print out with just a space no comma
+		}
+		}
+		outputFile << "\n";
+		outputFile << y.first << endl;//this will output the ALSDHGOIREHGIDLSJFSHFOSEHFOSHGIFJSGH text from the file because we are 
+									//calling first part of the mylist which based on the unordered_map is the ALDFOSDFOSHFO text;
+		outputFile << "\n";//just another line to help make things clearier
+	}
+	outputFile.close();//close output file to finish 
+	system("pause");
+	return 0;
+}
+
+	

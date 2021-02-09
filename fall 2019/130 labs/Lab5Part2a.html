@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>CSci130 - Web Programming - Lab5: Part 2</title>
+	<script>
+		var array;
+		var size;
+		var table; 
+		var col;
+		var col2;
+		
+		function GetMin(){
+			return Math.min.apply(null, array);
+		}
+		
+		function GetMax(){
+			return Math.max.apply(null, array);
+		}
+		
+		function GetMean(){
+			let avg = 0.0;
+			for(let i = 0; i < array.length; i++){
+				avg =  avg + Number(array[i]);
+			}
+			avg = avg / array.length;
+			return avg;
+		}
+		
+		function GetSD(){
+			let sd = 0.0;
+			let vmean=GetMean();
+			for(let i = 0; i < array.length; i++){
+				sd =  (vmean-Number(array[i]))*(vmean-Number(array[i]));
+			}
+			sd = sd / array.length;
+			return Math.sqrt(sd);
+		}
+		
+		function alert_min(){
+			alert("min = " + GetMin());
+		}
+		function alert_max(){
+			alert("max = " + GetMax());
+		}
+		function alert_mean(){
+			alert("mean = " + GetMean());
+		}
+		
+		function alert_SD(){
+			var SD = 0;
+			var j = 0;
+			var avg = 0;
+			avg = mean();
+			for(i = 0; i < array.length; i++){
+				j = j + Math.pow((array[i] - avg),2);
+			}
+			SD = Math.sqrt(j/(array.length-1));
+			alert("SD = " + SD);
+		}
+		
+		// Add a new value into the array 
+		function addNewValue(){
+			size++;
+			var i = size-1;
+			var newvalue = prompt("new value: ");
+			array.push(Number(newvalue));
+			
+			col.insertCell(i);
+			col.cells[i].classList.add("cellsData");
+			
+			var thetext = document.createElement("TEXT");
+			thetext.classList.add("cellsValue");
+			thetext.innerHTML = array[i];
+			col.cells[i].appendChild(thetext);
+			
+			var emptydiv = document.createElement("DIV");
+			emptydiv.classList.add("cellsDiv_top");
+			emptydiv.id = "div" + i.toString() + "top";
+			col.cells[i].appendChild(emptydiv);
+			
+			var thediv = document.createElement("DIV");
+			thediv.id = "div" + i.toString();
+			thediv.classList.add("cellsDiv_bottom");
+			col.cells[Number(i)].appendChild(thediv);
+			createGraph();	
+		}
+		
+		// Creates the visual graph 
+		function createGraph(){
+		
+			// Get all the elements into the array
+			for (let i=0;i<array.length;i++) {
+				array[i]=document.getElementById('n' + i).value;
+				// alert(array[i]);
+			}
+			
+			// y = ax+b
+			// if x=min then y=0
+			// if x=max then y=100
+			// a= 100/(max-min)
+			// b= 100 - a*max
+			
+			let minNum = GetMin();
+			let maxNum = GetMax();
+			let a=100/(maxNum-minNum);
+			let b=100-a*maxNum;
+			
+			for(let i=0;i<array.length;i++){
+					// Get access to the div we want to modify
+					d = document.getElementById('d'+i);
+					let heightNum = a*array[i]+b;
+					heightNum=Math.round(heightNum);
+					// alert("height of : " + array[i] + " is " + heightNum);
+					let str= heightNum + "px"; 
+					d.style.height = str;
+					d.style.width=100;
+			}
+			
+			let vmean=GetMean();
+			let vsd=GetSD();
+			let p1=document.getElementById("result");
+			p1.innerHTML="Mean:" + vmean + " SD:" + vsd;
+		}
+		
+				
+		function createVectorForm() {
+			let n = document.getElementById("numOfElements");
+			size=Number(n.value);
+			array = new Array(size);
+			let myTableDiv=document.getElementById("myinputs");
+			let table = document.createElement('TABLE'); // creation of HTML code , notice you dont close the table !
+			myTableDiv.appendChild(table); // add the table that was created in the DOM 
+	
+			table.border='1';
+			table.style.borderCollapse='collapse';
+			let tableBody = document.createElement('TBODY');
+			table.appendChild(tableBody);
+			let sizerow=2;
+			let sizecol=n.value;
+			
+			
+			// Write the textbox
+			let tr = document.createElement('TR');
+			tableBody.appendChild(tr);
+			  
+			for (let j=0; j<sizecol; j++){
+				   let td = document.createElement('TD');
+				   td.width='75'; 
+				   td.innerHTML='<input type="text" value = "' + 40*Math.random() + '" id=n' + j + '>';
+				   tr.appendChild(td);
+			   }
+			tr = document.createElement('TR');
+			tableBody.appendChild(tr);
+			  
+			for (let j=0; j<sizecol; j++){
+				   let td = document.createElement('TD');
+				   td.width='75'; 
+				   td.innerHTML='<div style="height:120,width:100"><div style="background-color:blue" id=d' + j + '></div></div>';
+				   tr.appendChild(td);
+			   }    
+		}	
+		
+		
+	</script>
+</head>
+<body>
+	<!-- 1. Determine the number of elements in the array -->
+	<div>
+		<tr>
+			<td>Number of Elements: </td>
+			<td><input type = "text" id = "numOfElements"></td>
+			<td><input type = "button" id = "create" value = "Create" onclick = "createVectorForm()"></td>
+		</tr>
+	</div>
+	
+	<!-- 2. Set the textboxes to set the values of each element -->
+	<div id="myinputs">
+	</div>
+
+	<input type="button" value="Validate" id="valbt" onclick="createGraph()" >
+	<p id="result"></p>
+</body>
+</html>

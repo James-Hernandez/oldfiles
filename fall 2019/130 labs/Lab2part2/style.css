@@ -1,0 +1,60 @@
+           header,
+           footer{
+               background-color:#f70042;
+               color: #ffffff;
+               font-weight: 800;
+               font-family: fantasy;
+               
+           }
+           section{
+               background-color: #ffffff;
+           }
+           
+           ul{
+               list-style-image: url(images/paw.png);
+           }
+           
+           #list-nav{
+               
+               margin-top: 15px;
+               background-color: #ffffff;
+               width: 300px;  
+               float: left;
+               margin-bottom: 15px;
+              
+           }
+           #dog{
+               width: 130px;
+               height: 130px; 
+                float: right;
+           }
+           #mha{
+               
+               width: 300px;
+               height: 150px;
+              
+               
+           }
+           #test{
+               clear: left;
+               margin-top: 15px;
+               /*background-color: #ffffff;*/
+           }
+           #test2{
+               margin-top: 15px;
+               /*background-color: #ffffff;*/
+           }
+           title{
+               text-align: center;
+           }
+           .section-title{
+               text-align: center;
+               color: #3100ff; 
+               font-weight: 600;
+               font-family:fantasy;
+           }
+           .description{
+             font-family: sans-serif;
+             font-size: 20;
+               
+           }

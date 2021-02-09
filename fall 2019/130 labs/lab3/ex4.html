@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>excersise 4</title>    
+    
+<style>
+    body,html{
+        width: 100%;
+        height: 100%;
+    }    
+    body{
+       /* margin: 0;
+        padding: 0;*/
+        background-color: #5b9fb4;
+        /*display: flex;
+        justify-content: center;
+        flex-direction: column;
+        */
+    }
+    .contain{
+        width: 500px;
+        height: 600px;
+        background-color: #995bb4;
+        transition: background-color 0.8s ease-out;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-top-left-radius: 200px;
+        border-top-right-radius: 200px;
+        border: solid 10px #9700c4;
+    }
+    .contain:hover{
+        
+        background-color: #561274;
+    }
+    
+    .lid{
+        width: 200px;
+        height: 60px;
+        background-color: aliceblue;
+        margin-left: 160px;
+        border-radius: 20px;
+        
+    }
+    .lid:hover{
+        background-color: aqua;
+    }
+    .bubbles{
+        
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+    }
+    .bubble:hover{
+      
+      background-color: #2370b4;
+    }
+    .bubble{
+        position: absolute;
+        bottom: 80px;
+        background-color: aliceblue;
+        border-radius: 50%;
+        opacity: 0.5;
+        animation: flying 10s infinite ease-in;
+    }
+    
+    .bubble:nth-child(1){
+        width: 30px;
+        height: 30px;  
+        left: 10%;
+        animation-duration: 8s;
+    }
+    .bubble:nth-child(2){
+        width: 10px;
+        height: 10px;  
+        left: 14%;
+        animation-duration: 6s;
+    }
+    .bubble:nth-child(3){
+        width: 20px;
+        height: 20px;  
+        left: 2%;
+        animation-duration: 7s;
+        animation-delay: 2s;
+    }
+    .bubble:nth-child(4){
+        width: 16px;
+        height: 16px;  
+        left: 8%;
+        animation-duration: 7s;
+        animation-delay: 3s;
+    }
+    .bubble:nth-child(5){
+        width: 25px;
+        height: 25px;  
+        left: 16%;
+        animation-duration: 4s;
+        animation-delay: 1s;
+    }
+    .bubble:nth-child(6){
+        width: 30px;
+        height: 30px;  
+        left: 11%;
+        animation-duration: 9s;
+        animation-delay: 1s;
+    }
+    .bubble:nth-child(7){
+        width: 27px;
+        height: 27px;  
+        left: 6%;
+        animation-duration: 8s;
+        animation-delay: 2s;
+    }
+    .bubble:nth-child(8){
+        width: 35px;
+        height: 35px;  
+        left: 22%;
+        animation-duration: 10s;
+        animation-delay: 5s;
+    }
+    .bubble:nth-child(9){
+        width: 30px;
+        height: 30px;  
+        left: 18%;
+        animation-duration: 11s;
+        animation-delay: 0s;
+    }
+    @keyframes flying{
+        0%{
+            bottom: 85px;
+            transform: translateX(0);
+        }
+        45%{
+            
+            transform: translateX(100px);
+        }
+        
+        85%{
+            
+            transform: (translateX(-80px));
+        }
+        100%{
+            bottom: 550px;
+            transform: translateX(10px);
+        }
+    }
+    
+    
+</style>
+</head>
+<body>
+    <div class="lid"></div>
+    <div class="contain">
+        <div class="bubbles">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+    </div>
+    
+</body>
+
+
+</html>

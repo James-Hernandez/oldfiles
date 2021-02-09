@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Midterm 191" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="Midterm 191" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="C:/Users/herna/Desktop/cscixxx_projects/common/bin" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Midterm 191" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="C:/Users/herna/Desktop/cscixxx_projects/common/bin" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="C:/Users/herna/Desktop/cscixxx_projects/common/include" />
+		</Compiler>
+		<Linker>
+			<Add library="../common/lib/libSOIL.a" />
+			<Add library="glut32" />
+			<Add library="opengl32" />
+			<Add library="glu32" />
+			<Add library="winmm" />
+			<Add library="gdi32" />
+			<Add directory="C:/Users/herna/Desktop/cscixxx_projects/common/lib" />
+		</Linker>
+		<Unit filename="include/GLLight.h" />
+		<Unit filename="include/GLScene.h" />
+		<Unit filename="include/Inputs.h" />
+		<Unit filename="include/Model.h" />
+		<Unit filename="include/Objects.h" />
+		<Unit filename="include/Parallax.h" />
+		<Unit filename="include/Player.h" />
+		<Unit filename="include/TextureLoader.h" />
+		<Unit filename="include/Timer.h" />
+		<Unit filename="include/test.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/GLLight.cpp" />
+		<Unit filename="src/GLScene.cpp" />
+		<Unit filename="src/Inputs.cpp" />
+		<Unit filename="src/Model.cpp" />
+		<Unit filename="src/Objects.cpp" />
+		<Unit filename="src/Parallax.cpp" />
+		<Unit filename="src/Player.cpp" />
+		<Unit filename="src/TextureLoader.cpp" />
+		<Unit filename="src/Timer.cpp" />
+		<Unit filename="src/test.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

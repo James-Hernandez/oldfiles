@@ -1,0 +1,96 @@
+# depslib dependency file v1.0
+1551921918 source:c:\users\herna\desktop\cscixxx_projects\midterm 191\main.cpp
+	<windows.h>
+	<GLScene.h>
+	<stdlib.h>
+	<iostream>
+	<windows.h>
+
+1553990377 c:\users\herna\desktop\cscixxx_projects\midterm 191\include\glscene.h
+	<windows.h>
+	<GL/glut.h>
+
+1538421741 c:\users\herna\desktop\cscixxx_projects\common\include\gl\glut.h
+	<windows.h>
+	<stdlib.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1549506203 source:c:\users\herna\desktop\cscixxx_projects\midterm 191\src\gllight.cpp
+	"GLLight.h"
+
+1549506656 c:\users\herna\desktop\cscixxx_projects\midterm 191\include\gllight.h
+	<GLScene.h>
+
+1553738282 source:c:\users\herna\desktop\cscixxx_projects\midterm 191\src\inputs.cpp
+	"Inputs.h"
+
+1553569122 c:\users\herna\desktop\cscixxx_projects\midterm 191\include\inputs.h
+	<windows.h>
+	<Model.h>
+	<Parallax.h>
+	<Player.h>
+
+1551146151 c:\users\herna\desktop\cscixxx_projects\midterm 191\include\model.h
+	<windows.h>
+	<GL/glut.h>
+
+1551921227 c:\users\herna\desktop\cscixxx_projects\midterm 191\include\parallax.h
+	<iostream>
+	<windows.h>
+
+1553738281 c:\users\herna\desktop\cscixxx_projects\midterm 191\include\player.h
+	<GL/gl.h>
+	<TextureLoader.h>
+
+1551145218 c:\users\herna\desktop\cscixxx_projects\midterm 191\include\textureloader.h
+	<SOIL.h>
+	<GL/gl.h>
+	<iostream>
+
+1542170522 c:\users\herna\desktop\cscixxx_projects\common\include\soil.h
+
+1551752379 source:c:\users\herna\desktop\cscixxx_projects\midterm 191\src\model.cpp
+	"Model.h"
+	<TextureLoader.h>
+
+1554000165 source:c:\users\herna\desktop\cscixxx_projects\midterm 191\src\objects.cpp
+	"Objects.h"
+
+1553999429 c:\users\herna\desktop\cscixxx_projects\midterm 191\include\objects.h
+	<Timer.h>
+	<Player.h>
+	<GL/gl.h>
+	<TextureLoader.h>
+
+1552524910 c:\users\herna\desktop\cscixxx_projects\midterm 191\include\timer.h
+	<time.h>
+
+1551922460 source:c:\users\herna\desktop\cscixxx_projects\midterm 191\src\parallax.cpp
+	"Parallax.h"
+	<TextureLoader.h>
+
+1553991007 source:c:\users\herna\desktop\cscixxx_projects\midterm 191\src\player.cpp
+	"Player.h"
+	<Timer.h>
+
+1553327099 source:c:\users\herna\desktop\cscixxx_projects\midterm 191\src\test.cpp
+	"test.h"
+
+1553327098 c:\users\herna\desktop\cscixxx_projects\midterm 191\include\test.h
+
+1551925384 source:c:\users\herna\desktop\cscixxx_projects\midterm 191\src\textureloader.cpp
+	"TextureLoader.h"
+
+1552525118 source:c:\users\herna\desktop\cscixxx_projects\midterm 191\src\timer.cpp
+	"Timer.h"
+
+1554000906 source:c:\users\herna\desktop\cscixxx_projects\midterm 191\src\glscene.cpp
+	"GLScene.h"
+	<GLLight.h>
+	<Inputs.h>
+	<Model.h>
+	<Parallax.h>
+	<Player.h>
+	<Objects.h>
+

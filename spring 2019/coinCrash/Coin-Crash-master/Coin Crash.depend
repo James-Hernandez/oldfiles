@@ -1,0 +1,493 @@
+# depslib dependency file v1.0
+1551919973 source:c:\users\rhode\desktop\coin crash\main.cpp
+	<windows.h>
+	<GLScene.h>
+	<stdlib.h>
+	<iostream>
+	<windows.h>
+
+1551316220 c:\users\rhode\desktop\coin crash\include\glscene.h
+	<windows.h>
+	<GL/glut.h>
+
+1538417631 c:\users\rhode\desktop\coin crash\common\include\gl\glut.h
+	<windows.h>
+	<stdlib.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1549502432 source:c:\users\rhode\desktop\coin crash\src\gllight.cpp
+	"GLLight.h"
+
+1549501832 c:\users\rhode\desktop\coin crash\include\gllight.h
+	<GLScene.h>
+
+1551918452 source:c:\users\rhode\desktop\coin crash\src\glscene.cpp
+	"GLScene.h"
+	"GLLight.h"
+	"Inputs.h"
+	"windows.h"
+	"Model.h"
+	"Parallax.h"
+
+1551748343 c:\users\rhode\desktop\coin crash\include\inputs.h
+	<windows.h>
+	<Model.h>
+	<Parallax.h>
+
+1551142271 c:\users\rhode\desktop\coin crash\include\model.h
+	<windows.h>
+	<GL/glut.h>
+
+1551917586 c:\users\rhode\desktop\coin crash\include\parallax.h
+	<iostream>
+	<windows.h>
+
+1551917610 source:c:\users\rhode\desktop\coin crash\src\inputs.cpp
+	"Inputs.h"
+
+1551142258 source:c:\users\rhode\desktop\coin crash\src\model.cpp
+	"Model.h"
+	"TextureLoader.h"
+
+1551141614 c:\users\rhode\desktop\coin crash\include\textureloader.h
+	<SOIL.h>
+	<GL/gl.h>
+	<iostream>
+
+1550010366 c:\users\rhode\desktop\coin crash\common\include\soil.h
+
+1551917580 source:c:\users\rhode\desktop\coin crash\src\parallax.cpp
+	"Parallax.h"
+	"TextureLoader.h"
+
+1551143260 source:c:\users\rhode\desktop\coin crash\src\textureloader.cpp
+	"TextureLoader.h"
+
+1554692641 source:c:\users\rhode\desktop\coin-crash\main.cpp
+	<windows.h>
+	<GLScene.h>
+	<stdlib.h>
+	<iostream>
+	<windows.h>
+	<SceneLoader.h>
+	<StartScene.h>
+
+1555358093 c:\users\rhode\desktop\coin-crash\include\glscene.h
+	<windows.h>
+	<GL/glut.h>
+
+1554692641 source:c:\users\rhode\desktop\coin-crash\src\gllight.cpp
+	"GLLight.h"
+
+1554692641 c:\users\rhode\desktop\coin-crash\include\gllight.h
+	<GLScene.h>
+
+1555358183 source:c:\users\rhode\desktop\coin-crash\src\glscene.cpp
+	"GLScene.h"
+	"GLLight.h"
+	"Inputs.h"
+	"windows.h"
+	"Model.h"
+	"Parallax.h"
+	"Player.h"
+	<math.h>
+	<algorithm>
+
+1554695083 c:\users\rhode\desktop\coin-crash\include\inputs.h
+	<windows.h>
+	<Model.h>
+	<Parallax.h>
+	<Player.h>
+
+1554692641 c:\users\rhode\desktop\coin-crash\include\model.h
+	<windows.h>
+	<GL/glut.h>
+
+1554692641 c:\users\rhode\desktop\coin-crash\include\parallax.h
+	<iostream>
+	<windows.h>
+
+1555399254 source:c:\users\rhode\desktop\coin-crash\src\inputs.cpp
+	"Inputs.h"
+
+1554692641 source:c:\users\rhode\desktop\coin-crash\src\model.cpp
+	"Model.h"
+	"TextureLoader.h"
+
+1554692641 c:\users\rhode\desktop\coin-crash\include\textureloader.h
+	<SOIL.h>
+	<GL/gl.h>
+	<iostream>
+
+1554841105 source:c:\users\rhode\desktop\coin-crash\src\parallax.cpp
+	"Parallax.h"
+	"TextureLoader.h"
+
+1555405281 source:c:\users\rhode\desktop\coin-crash\src\player.cpp
+	"Player.h"
+	<Timer.h>
+
+1555398835 c:\users\rhode\desktop\coin-crash\include\player.h
+	<GL/gl.h>
+	<TextureLoader.h>
+	<Timer.h>
+
+1554765630 source:c:\users\rhode\desktop\coin-crash\src\textureloader.cpp
+	"TextureLoader.h"
+
+1552019964 source:c:\users\rhode\desktop\coin-crash\src\scenemanager.cpp
+	"SceneManager.h"
+
+1552019256 c:\users\rhode\desktop\coin-crash\include\scenemanager.h
+
+1538421231 c:\users\rhode\desktop\coin-crash\common\include\gl\glut.h
+	<windows.h>
+	<stdlib.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1554692641 c:\users\rhode\desktop\coin-crash\common\include\soil.h
+
+1552020032 source:c:\users\rhode\desktop\coin-crash\src\test.cpp
+	"Test.h"
+
+1552020032 c:\users\rhode\desktop\coin-crash\include\test.h
+
+1552527749 source:c:\users\rhode\desktop\march11\coin-crash\main.cpp
+	<windows.h>
+	<GLScene.h>
+	<stdlib.h>
+	<iostream>
+	<windows.h>
+
+1552349405 c:\users\rhode\desktop\march11\coin-crash\include\glscene.h
+	<windows.h>
+	<GL/glut.h>
+
+1552349405 c:\users\rhode\desktop\march11\coin-crash\common\include\gl\glut.h
+	<windows.h>
+	<stdlib.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1552349405 source:c:\users\rhode\desktop\march11\coin-crash\src\gllight.cpp
+	"GLLight.h"
+
+1552349405 c:\users\rhode\desktop\march11\coin-crash\include\gllight.h
+	<GLScene.h>
+
+1552525547 source:c:\users\rhode\desktop\march11\coin-crash\src\glscene.cpp
+	"GLScene.h"
+	"GLLight.h"
+	"Inputs.h"
+	"windows.h"
+	"Model.h"
+	"Parallax.h"
+	"Player.h"
+
+1552524247 c:\users\rhode\desktop\march11\coin-crash\include\inputs.h
+	<windows.h>
+	<Model.h>
+	<Parallax.h>
+	<Player.h>
+
+1552349405 c:\users\rhode\desktop\march11\coin-crash\include\model.h
+	<windows.h>
+	<GL/glut.h>
+
+1552349405 c:\users\rhode\desktop\march11\coin-crash\include\parallax.h
+	<iostream>
+	<windows.h>
+
+1552524263 source:c:\users\rhode\desktop\march11\coin-crash\src\inputs.cpp
+	"Inputs.h"
+
+1552528254 source:c:\users\rhode\desktop\march11\coin-crash\src\player.cpp
+	"Player.h"
+	"Timer.h"
+
+1552523401 c:\users\rhode\desktop\march11\coin-crash\include\player.h
+	<GL/gl.h>
+	<TextureLoader.h>
+
+1552349405 source:c:\users\rhode\desktop\march11\coin-crash\src\test.cpp
+	"Test.h"
+
+1552349405 c:\users\rhode\desktop\march11\coin-crash\include\test.h
+
+1552350332 source:c:\users\rhode\desktop\march11\coin-crash\src\model.cpp
+	"Model.h"
+	"TextureLoader.h"
+
+1552349970 c:\users\rhode\desktop\march11\coin-crash\include\textureloader.h
+	<SOIL.h>
+	<GL/gl.h>
+	<iostream>
+
+1552349405 c:\users\rhode\desktop\march11\coin-crash\common\include\soil.h
+
+1552349405 source:c:\users\rhode\desktop\march11\coin-crash\src\parallax.cpp
+	"Parallax.h"
+	"TextureLoader.h"
+
+1552349405 source:c:\users\rhode\desktop\march11\coin-crash\src\textureloader.cpp
+	"TextureLoader.h"
+
+1552525978 source:c:\users\rhode\desktop\march11\coin-crash\src\timer.cpp
+	"Timer.h"
+
+1552524865 c:\users\rhode\desktop\march11\coin-crash\include\timer.h
+	<time.h>
+
+1554609919 source:c:\users\naji\desktop\coin-crash\src\gllight.cpp
+	"GLLight.h"
+
+1554609918 c:\users\naji\desktop\coin-crash\include\gllight.h
+	<GLScene.h>
+
+1554609918 c:\users\naji\desktop\coin-crash\include\glscene.h
+	<windows.h>
+	<GL/glut.h>
+
+1554609918 c:\users\naji\desktop\coin-crash\common\include\gl\glut.h
+	<windows.h>
+	<stdlib.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1554609919 source:c:\users\naji\desktop\coin-crash\src\glscene.cpp
+	"GLScene.h"
+	"GLLight.h"
+	"Inputs.h"
+	"windows.h"
+	"Model.h"
+	"Parallax.h"
+	"Player.h"
+	<math.h>
+	<algorithm>
+
+1554609918 c:\users\naji\desktop\coin-crash\include\inputs.h
+	<windows.h>
+	<Model.h>
+	<Parallax.h>
+	<Player.h>
+
+1554609918 c:\users\naji\desktop\coin-crash\include\model.h
+	<windows.h>
+	<GL/glut.h>
+
+1554609918 c:\users\naji\desktop\coin-crash\include\parallax.h
+	<iostream>
+	<windows.h>
+
+1554609918 c:\users\naji\desktop\coin-crash\include\player.h
+	<GL/gl.h>
+	<TextureLoader.h>
+
+1554609918 c:\users\naji\desktop\coin-crash\include\textureloader.h
+	<SOIL.h>
+	<GL/gl.h>
+	<iostream>
+
+1554609918 c:\users\naji\desktop\coin-crash\common\include\soil.h
+
+1554609919 source:c:\users\naji\desktop\coin-crash\src\inputs.cpp
+	"Inputs.h"
+
+1554609919 source:c:\users\naji\desktop\coin-crash\src\model.cpp
+	"Model.h"
+	"TextureLoader.h"
+
+1554609919 source:c:\users\naji\desktop\coin-crash\src\parallax.cpp
+	"Parallax.h"
+	"TextureLoader.h"
+
+1554609919 source:c:\users\naji\desktop\coin-crash\src\player.cpp
+	"Player.h"
+	"Timer.h"
+
+1554609918 c:\users\naji\desktop\coin-crash\include\timer.h
+	<time.h>
+
+1554609919 source:c:\users\naji\desktop\coin-crash\src\textureloader.cpp
+	"TextureLoader.h"
+
+1554609919 source:c:\users\naji\desktop\coin-crash\src\timer.cpp
+	"Timer.h"
+
+1554610212 source:c:\users\naji\desktop\coin-crash\src\sceneloader.cpp
+	"SceneLoader.h"
+	<StartScene.h>
+
+1554610016 c:\users\naji\desktop\coin-crash\include\sceneloader.h
+	<unordered_map>
+	<string>
+	<StartScene.h>
+	<SceneLoader.h>
+
+1554609918 source:c:\users\naji\desktop\coin-crash\main.cpp
+	<windows.h>
+	<GLScene.h>
+	<stdlib.h>
+	<iostream>
+	<windows.h>
+	<SceneLoader.h>
+	<StartScene.h>
+
+1554610771 source:c:\users\naji\desktop\coin-crash\src\startscene.cpp
+	"StartScene.h"
+	<GLLight.h>
+	<Parallax.h>
+	<SceneLoader.h>
+	<InfoScene.h>
+
+1554609918 c:\users\naji\desktop\coin-crash\include\startscene.h
+	<GLScene.h>
+	<Parallax.h>
+	<Inputs.h>
+	<SceneLoader.h>
+
+1554695201 c:\users\rhode\desktop\coin-crash\include\sceneloader.h
+	<unordered_map>
+	<string>
+	<StartScene.h>
+	<SceneLoader.h>
+	<LevelOne.h>
+
+1554696220 c:\users\rhode\desktop\coin-crash\include\startscene.h
+	<GLScene.h>
+	<Parallax.h>
+	<Inputs.h>
+	<SceneLoader.h>
+	<LevelOne.h>
+
+1554692641 c:\users\rhode\desktop\coin-crash\include\timer.h
+	<time.h>
+
+1554692641 source:c:\users\rhode\desktop\coin-crash\src\sceneloader.cpp
+	"SceneLoader.h"
+	<StartScene.h>
+
+1555533907 source:c:\users\rhode\desktop\coin-crash\src\startscene.cpp
+	"StartScene.h"
+	<GLLight.h>
+	<Parallax.h>
+	<SceneLoader.h>
+	<InfoScene.h>
+	<MusicSelectScene.h>
+
+1554692641 source:c:\users\rhode\desktop\coin-crash\src\timer.cpp
+	"Timer.h"
+
+1554614173 source:c:\users\naji\desktop\coin-crash\src\infoscene.cpp
+	"InfoScene.h"
+	"GLLight.h"
+
+1554614147 c:\users\naji\desktop\coin-crash\include\infoscene.h
+	<GLScene.h>
+	<Inputs.h>
+	<SceneLoader.h>
+	<Objects.h>
+
+1554614004 source:c:\users\naji\desktop\coin-crash\src\objects.cpp
+	"objects.h"
+
+1554613995 c:\users\naji\desktop\coin-crash\include\objects.h
+	<gl/gl.h>
+	<TextureLoader.h>
+	<Timer.h>
+	<Player.h>
+	<SceneLoader.h>
+	<StartScene.h>
+
+1555358196 source:c:\users\rhode\desktop\coin-crash\src\infoscene.cpp
+	"InfoScene.h"
+	"GLLight.h"
+
+1554692641 c:\users\rhode\desktop\coin-crash\include\infoscene.h
+	<GLScene.h>
+	<Inputs.h>
+	<SceneLoader.h>
+	<Objects.h>
+
+1554692641 c:\users\rhode\desktop\coin-crash\include\objects.h
+	<gl/gl.h>
+	<TextureLoader.h>
+	<Timer.h>
+	<Player.h>
+	<SceneLoader.h>
+	<StartScene.h>
+
+1554692903 source:c:\users\rhode\desktop\coin-crash\src\objects.cpp
+	"objects.h"
+
+1555982101 source:c:\users\rhode\desktop\coin-crash\src\levelone.cpp
+	<loadShader.h>
+	"LevelOne.h"
+	<GLLight.h>
+	<Model.h>
+	<Parallax.h>
+	<windows.h>
+	<Litecoin.h>
+	<CollisionChecker.h>
+
+1554760295 c:\users\rhode\desktop\coin-crash\include\levelone.h
+	<windows.h>
+	<GLScene.h>
+	<Parallax.h>
+	<Inputs.h>
+	<SceneLoader.h>
+	<Player.h>
+	<Coin.h>
+
+1555388982 c:\users\rhode\desktop\coin-crash\include\coin.h
+	<GL/gl.h>
+	<TextureLoader.h>
+	<Timer.h>
+	<utility>
+
+1555403872 source:c:\users\rhode\desktop\coin-crash\src\coin.cpp
+	"Coin.h"
+	"TextureLoader.h"
+
+1554847717 c:\users\rhode\desktop\coin-crash\include\litecoin.h
+	"Coin.h"
+
+1555405006 source:c:\users\rhode\desktop\coin-crash\src\litecoin.cpp
+	"Litecoin.h"
+
+1555978288 source:c:\users\rhode\desktop\coin-crash\src\collisionchecker.cpp
+	"CollisionChecker.h"
+
+1555397802 c:\users\rhode\desktop\coin-crash\include\collisionchecker.h
+	"Player.h"
+	"Litecoin.h"
+
+1555406854 c:\users\rhode\desktop\coin-crash\include\musicselectscene.h
+	<GLScene.h>
+	<Inputs.h>
+	<SceneLoader.h>
+
+1555410518 source:c:\users\rhode\desktop\coin-crash\src\musicselectscene.cpp
+	"MusicSelectScene.h"
+
+1555980730 source:c:\users\rhode\desktop\coin-crash\src\loadshader.cpp
+	"loadShader.h"
+
+1555979445 c:\users\rhode\desktop\coin-crash\include\loadshader.h
+	<GL/glew.h>
+	<stdlib.h>
+	<iostream>
+	<math.h>
+	<fstream>
+
+1553279718 c:\users\rhode\desktop\coin-crash\common\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+

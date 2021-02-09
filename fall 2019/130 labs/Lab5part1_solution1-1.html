@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>CSci130 - Web Programming - Lab5: Part 1</title>
+<script>
+
+let opPressed = false; //operation pressed flag (will be true when entering the 2nd value)
+let newState = false;
+let op = '';
+let xnum = 0.0;
+let ynum =  0.0;
+let val = '';
+let prevAns = 0.0;
+
+function btnpush(value) {
+	var fired_button = value;
+	display(value);
+}
+
+function display(inp) {
+	if(newState){	//reached if operation was completed and user began new statement
+		calcReset();
+	}
+	if(inp == "CE"){	//clear displays
+		calcReset();
+	}
+	else if(inp == '+' || inp == '-' || inp == '*' || inp == '/'){	//operations
+		if(opPressed){	//prevents more than two numbers from being evaluated
+			alert("Can only evaluate two numbers at a time.");
+		}
+		else{
+			opPressed = true;	//operation pressed
+			if(val == ''){	//used if user wants to operate on previous result
+				xnum = prevAns;
+				document.getElementById("sequence").innerHTML += prevAns;
+			}
+			else
+				xnum = parseFloat(val);
+			val = '';
+			document.getElementById("sequence").innerHTML += inp;
+			document.getElementById("result").innerHTML = '';
+			op = inp;
+		}
+	}
+	else if(inp == '='){	//evaluates expression in sequence
+		let res;
+		newState = true;
+		ynum = parseFloat(val);
+		if(opPressed == true)
+			res = evalExpr();//pass sequence & parse to evaluate
+		else
+			res = prevAns;
+		val = '';
+		document.getElementById("result").innerHTML = res;
+		prevAns = res;
+		document.getElementById("sequence").innerHTML += inp;
+	}
+	else{
+		val += inp;
+		document.getElementById("sequence").innerHTML += inp;
+		document.getElementById("result").innerHTML += inp;
+	}
+}
+
+function calcReset() {	//resets variables except for prevAns
+	document.getElementById("sequence").innerHTML = '';
+	document.getElementById("result").innerHTML = '';
+	opPressed = false; //operation pressed flag (will be true when entering the 2nd value)
+	newState = false;
+	op = '';
+	xnum = 0.0;
+	ynum =  0.0;
+	val = '';
+}
+
+function evalExpr() {
+	let r;
+	if(op == '+')
+		r = xnum + ynum;
+	else if(op == '-')
+		r = xnum - ynum;
+	else if(op == '*')
+		r = xnum * ynum;
+	else if(op == '/')
+		r = xnum / ynum;
+	else
+		alert("What??"); //should not be reachable
+	r = Number(Math.round(r+'e10')+'e-10');
+	return r;
+}
+</script>
+
+<style>
+h1 {
+	text-align: center;
+	color: blue;
+}
+
+body {
+	background-color: white;
+}
+
+table {
+    border-collapse: separate;
+    margin-left: auto;
+	margin-right: auto;
+    border: 2px solid navy;
+	padding: 2px;
+} 
+
+td {
+    border: 1px solid navy;
+	width: 50px;
+	height: 55px;
+	text-align: center;
+}
+
+button {
+	width: 100%;
+	height: 100%;
+	font-weight: bold;
+}
+
+#seq, #res {
+	background-color: silver;
+}
+
+</style>
+</head>
+
+<body>
+	<header id="header">
+		<h1>Basic Calculator - Part 1</h1>
+	</header>
+	<div id="calcContainer" padding-left="100px"><br><br>
+	<table id="calc">
+		<tr id="seq">
+			<td colspan="4" id="sequence"></td>
+		</tr>
+		<tr id="res">
+			<td colspan="4" id="result"></td>
+		</tr>
+		<tr id="firstRow">
+			<td><button onclick="btnpush(value)" value="CE">CE</button></td>
+			<td><button onclick="btnpush(value)" value="/">/</button></td>
+			<td><button onclick="btnpush(value)" value="*">*</button></td>
+			<td><button onclick="btnpush(value)" value="-">-</button></td>
+		</tr>
+		<tr id="secondRow">
+			<td><button onclick="btnpush(value)" value="7">7</button></td>
+			<td><button onclick="btnpush(value)" value="8">8</button></td>
+			<td><button onclick="btnpush(value)" value="9">9</button></td>
+			<td rowspan="2"><button onclick="btnpush(value)" value="+">+</button></td>
+		</tr>
+		<tr id="thirdRow">
+			<td><button onclick="btnpush(value)" value="4">4</button></td>
+			<td><button onclick="btnpush(value)" value="5">5</button></td>
+			<td><button onclick="btnpush(value)" value="6">6</button></td>
+		</tr>
+		<tr id="fourthRow">
+			<td><button onclick="btnpush(value)" value="1">1</button></td>
+			<td><button onclick="btnpush(value)" value="2">2</button></td>
+			<td><button onclick="btnpush(value)" value="3">3</button></td>
+			<td rowspan="2"><button onclick="btnpush(value)" value="=">=</button></td>
+		</tr>
+		<tr id="fifthRow">
+			<td colspan="2"><button onclick="btnpush(value)" value="0">0</button></td>
+			<td><button onclick="btnpush(value)" value=".">.</button></td>
+		</tr>
+	</table>
+	</div>
+</body>
+
+</html>
